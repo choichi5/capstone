@@ -1,0 +1,9 @@
+<launch>
+    <node pkg="joy" type="joy_node" name="joy_node"/>
+    <node pkg="robot_joy" type="listener.py" name="packet_node"/>
+    <node pkg="serial_example" type="serial_example_node" name="rosserial_node"/>
+</launch>
+
+<!-- 
+    roslaunch robot_joy robot_joy.launch
+ -->
